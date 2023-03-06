@@ -58,7 +58,7 @@ function App() {
  
     <div className='App' style={{ backgroundImage: img[ indexImg ] }}>
    
-<div className='App'>
+<div>
 <Title
 text="Galleta de la Fortuna"
 >
@@ -66,7 +66,7 @@ text="Galleta de la Fortuna"
 </Title>
 
 </div>
- <h1>hola</h1>
+
 
     <PhraseCard 
     phraseData={ phrases[index] }

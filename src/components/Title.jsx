@@ -1,5 +1,5 @@
 const Title = ( {text}) => {
-  console.log("Hola mundo!")
+  
 
 
 return (
