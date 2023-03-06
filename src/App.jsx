@@ -4,6 +4,7 @@ import './App.css'
 import PhraseCard from './components/PhraseCard';
 import phrases from './data/phrases.json';
 import { useState } from 'react';
+import Title from './components/Title';
 
 
  
@@ -13,6 +14,8 @@ function App() {
   
    const img = [ "url(/img/fondo1.jpg)", "url(/img/fondo2.jpg)", "url(/img/fondo3.jpg)", "url(/img/fondo4.jpg)" ]
 
+
+   
    const [ index, setIndex ] = useState( 0 )
    const [ indexImg, setIndexImg] = useState ( 0 )
    
@@ -55,17 +58,26 @@ function App() {
  
     <div className='App' style={{ backgroundImage: img[ indexImg ] }}>
    
- 
- 
+<div className='App'>
+<Title
+text="Galleta de la Fortuna"
+>
+
+</Title>
+
+</div>
+ <h1>hola</h1>
 
     <PhraseCard 
     phraseData={ phrases[index] }
     />
-   
+
 
 <button onClick={ changePhrase }> Ver Otro
    {/* <i className='bx bx-refresh'></i> */}
 </button>
+
+
     </div>
 
 
